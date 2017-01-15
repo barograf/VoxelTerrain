@@ -61,48 +61,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CPUGenerator.cs" />
-    <Compile Include="CUDAGenerator.cs" />
-    <Compile Include="CUDANoiseCube.cs" />
-    <Compile Include="CUDAPrefixScan.cs" />
-    <Compile Include="DefaultRenderer.cs" />
-    <Compile Include="DirectComputeConstantBuffer.cs" />
-    <Compile Include="DirectComputeBufferHelper.cs" />
-    <Compile Include="DirectComputeGenerator.cs" />
-    <Compile Include="DirectComputeNoiseCube.cs" />
-    <Compile Include="DirectComputePrefixScan.cs" />
-    <Compile Include="IRender.cs" />
-    <Compile Include="IGenerate.cs" />
-    <Compile Include="IVoxelMesh.cs" />
-    <Compile Include="PostProcess.cs" />
-    <Compile Include="PostProcessSettings.cs" />
+    <Compile Include="Sources\Generators\CPU\CPUGenerator.cs" />
+    <Compile Include="Sources\Generators\CUDA\CUDAGenerator.cs" />
+    <Compile Include="Sources\Generators\CUDA\CUDANoiseCube.cs" />
+    <Compile Include="Sources\Generators\CUDA\CUDAPrefixScan.cs" />
+    <Compile Include="Sources\Rendering\DefaultRenderer.cs" />
+    <Compile Include="Sources\Generators\DirectCompute\DirectComputeConstantBuffer.cs" />
+    <Compile Include="Sources\Generators\DirectCompute\DirectComputeBufferHelper.cs" />
+    <Compile Include="Sources\Generators\DirectCompute\DirectComputeGenerator.cs" />
+    <Compile Include="Sources\Generators\DirectCompute\DirectComputeNoiseCube.cs" />
+    <Compile Include="Sources\Generators\DirectCompute\DirectComputePrefixScan.cs" />
+    <Compile Include="Sources\Rendering\IRender.cs" />
+    <Compile Include="Sources\Generators\IGenerate.cs" />
+    <Compile Include="Sources\Voxels\IVoxelMesh.cs" />
+    <Compile Include="Sources\Rendering\PostProcess.cs" />
+    <Compile Include="Sources\Rendering\PostProcessSettings.cs" />
     <Compile Include="ProgramForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProgramForm.Designer.cs">
       <DependentUpon>ProgramForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuadRenderer.cs" />
-    <Compile Include="RenderTarget.cs" />
-    <Compile Include="ShaderPrecompiler.cs" />
-    <Compile Include="SkyCube.cs" />
-    <Compile Include="TexturePack.cs" />
-    <Compile Include="VoxelMesh.cs" />
-    <Compile Include="Camera.cs" />
+    <Compile Include="Sources\Rendering\QuadRenderer.cs" />
+    <Compile Include="Sources\Rendering\RenderTarget.cs" />
+    <Compile Include="Sources\Utils\ShaderPrecompiler.cs" />
+    <Compile Include="Sources\Rendering\SkyCube.cs" />
+    <Compile Include="Sources\Rendering\TexturePack.cs" />
+    <Compile Include="Sources\Voxels\VoxelMesh.cs" />
+    <Compile Include="Sources\Rendering\Camera.cs" />
     <Compile Include="FrameworkForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Helper.cs" />
-    <Compile Include="MoveDirection.cs" />
-    <Compile Include="NoiseCube.cs" />
-    <Compile Include="PerformanceTimer.cs" />
+    <Compile Include="Sources\Utils\Helper.cs" />
+    <Compile Include="Sources\Rendering\MoveDirection.cs" />
+    <Compile Include="Sources\Rendering\NoiseCube.cs" />
+    <Compile Include="Sources\Utils\PerformanceTimer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Voxel.cs" />
-    <Compile Include="VoxelCube.cs" />
-    <Compile Include="VoxelMeshContainer.cs" />
-    <Compile Include="VoxelMeshSettings.cs" />
-    <Compile Include="VoxelMeshVertex.cs" />
+    <Compile Include="Sources\Voxels\Voxel.cs" />
+    <Compile Include="Sources\Voxels\VoxelCube.cs" />
+    <Compile Include="Sources\Voxels\VoxelMeshContainer.cs" />
+    <Compile Include="Sources\Voxels\VoxelMeshSettings.cs" />
+    <Compile Include="Sources\Voxels\VoxelMeshVertex.cs" />
     <EmbeddedResource Include="ProgramForm.resx">
       <DependentUpon>ProgramForm.cs</DependentUpon>
     </EmbeddedResource>
