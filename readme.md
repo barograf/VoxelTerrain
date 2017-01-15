@@ -1,4 +1,8 @@
-# VoxelTerrain
+# Voxel Terrain
+
+![Screenshot 1](https://raw.githubusercontent.com/barograf/VoxelTerrain/master/Screenshots/1.jpg)
+![Screenshot 2](https://raw.githubusercontent.com/barograf/VoxelTerrain/master/Screenshots/2.jpg)
+![Screenshot 3](https://raw.githubusercontent.com/barograf/VoxelTerrain/master/Screenshots/3.jpg)
 
 ## Introduction
 
@@ -43,16 +47,21 @@ Some screenshots presenting the final effect can be [found here](https://www.dro
 
 ## Installation
 
-There are some prerequisites before the installation process. This project requires a graphics card with DirectX 11 and CUDA 2.0 support. Moreover, there should be Microsoft .NET package installed in the system with version 4.0 or higher. It is also recommended to install Microsoft DirectX SDK package.
+There are some prerequisites:
+
+* Graphics card with DirectX 11 and CUDA 2.0 or higher
+* Microsoft.NET framework with version 4.0 or higher
+* Microsoft DirectX SDK
+* [CUDA Toolkit 8.0](https://developer.nvidia.com/cuda-downloads)
+* Visual Studio 2015
+* 64-bit platform due to cuRAND requirement
 
 The solution uses some wrappers around native CUDA and DirectX libraries:
 
-* [SlimDX](http://slimdx.org/) for DirectX
-* [ManagedCuda and CudaRand](http://managedcuda.codeplex.com/) for CUDA and cuRAND
+* [SlimDX](http://slimdx.org/) for DirectX - included in solution because there is no x64 equivalent in NuGet
+* [ManagedCuda and CudaRand](http://managedcuda.codeplex.com/) for CUDA and cuRAND - shipped as NuGet packages
 
-A pack of fancy textures needed in visualization process can be [found here](https://www.dropbox.com/s/zn8yypfrkocuyh0/VoxelTerrain%20Textures.7z?dl=0). Just download, unpack, and put them in project's folder before build. You can also place them in directory with binaries.
-
-Compiled version of the project (without textures) can be [found here](https://www.dropbox.com/s/ja698cwdnjcz0ol/VoxelTerrain%20Binaries.7z?dl=0).
+There are some sample textures in repository. Each one contains color, displacement and bump map.
 
 ## License
 
